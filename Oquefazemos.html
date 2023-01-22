@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    
+        <link rel="stylesheet" href="estilos.css">
+    
+    <title>O Que Fazemos</title>
+
+</head>
+
+<body  id="removerscroll">
+   
+   
+    <nav class="navbar" id="barradenavegacao">
+
+        <a id="logo" href="index.html" title="WWF">
+           <img  src="imgs/logo.png" alt="logo">
+       </a>
+
+       <span class="direita">
+
+        <a id="perfil" href="javascript:void(0);" onclick="login()">Perfil</a>   
+        <a href="Eventos.html" >Eventos</a>
+        <a href="Recursos.html" >Recursos</a>
+        <a href="Oquefazemos.html" class=" active">O Que Fazemos</a>
+        <a class="quemsomos" href="Quemsomos.html">Quem Somos</a>
+        <div class="dropdown">
+         <button class="dropbtn">Quem Somos <i class="fa fa-chevron-down"></i></button>
+         <div class="dropdown-caixa">
+             <a href="Quemsomos.html">wwf</a>
+           <a href="Quemsomos.html#encontre-nos">Encontre-nos</a>
+           <a href="Quemsomos.html#candidatura">Candidatura</a>
+         </div>
+       </div>
+ 
+        </span>
+
+
+       <a href="javascript:void(0);" class="icon" onclick="barradenavegacao()">
+       <i class="fa fa-bars"></i>
+       </a>
+
+        <a href="javascript:void(0);" class="icon user" onclick="login()">
+       <i class="fa fa-user"></i>
+       </a>
+
+   </nav>
+
+    <main>
+
+        <div id="displaylogin">
+   
+            <div id="pagina-escura"></div>
+     
+            <div class="caixalogin">
+     
+             <a class="fechar" onclick="fecharlogin()">
+                 <i class="fa fa-close fa-2x "></i>
+             </a>
+                 <div class="formlogin">
+     
+                   
+                     <h2 class="h2login">LOGIN</h2>
+                     <form method="post" id="login-form">
+                         <input type="email" placeholder="Email" id="email" required>
+                         <input type="password" pattern="[a-zA-Z]{3}[0-9]{3}" placeholder="Password" id="password" required>
+                         <input type="button" value="Login" onclick="validarlogin()" class="loginbtn">
+                      
+                         <p id="dadosincorretos">Dados Incorretos!</p>
+                         <p class="registo">Não tem conta? <a href="Registo.html">Faça já o seu registo!</a></p>
+                     </form>
+                 </div>
+             </div>
+     
+         </div>
+
+        <section class="margemsection">
+            <h2  id="primeiro">O QUE FAZEMOS?</h2>
+            <br>
+          
+            <p class="margemtextos"><b style="font-size: 30px;">Programas, Iniciativas e Parcerias</b> - Princípios orientadores para a WWF
+                        <br>
+                        <br>
+            Com o objetivo de atingir em grande escala e a longo prazo os impactos, devemos atacar já as causas subjacentes à degradação ambiental.
+            
+            <br>
+            <br>
+
+                A WWF procura identificar o bom e o mau da mudança de combustíveis, enquanto incentiva à inversão das tendências 
+                    atuais e tenta conduzir as políticas e as práticas para um caminho mais verde.</p>
+                <br>
+               
+                <div class="centrar resp-video">
+
+                    <iframe  class="resp-iframe" src="https://www.youtube.com/embed/Tss6HtHlLuw" frameborder="0" 
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             
+             
+                    </div>
+
+                    <br>
+
+                <h1 class="centrartexto">Concentração de esforços</h1>
+
+                <br>
+                <br>
+                <p  class="margemtextos">Devido aos recursos limitados, aos fundos restritos e ao fato de que estamos numa corrida contra o tempo, 
+                a WWF tem concentrado os seus esforços em 13 iniciativas globais. Com base em objetivos visionários, estes esforços podem ter um 
+                potencial mais amplo e resultarem em impactos altamente positivos.</p>
+            
+                <br>
+                <br>
+                
+                <h1 class="centrartexto">Aproveitar a nossa experiência</h1>
+           
+                <br>
+                <br>
+
+                <p  class="margemtextos">O trabalho de campo da WWF é garantido pelas pessoas dedicadas que temos tido nos nossos programas - incluíndo cientistas de 
+                    conservação, líderes, especialistas, economistas, advogados e comunicadores.</p>
+             
+                <br>
+                <br>
+         
+                <h1 class="centrartexto">Construímos parcerias fortes</h1>
+                    
+                <br>
+                <br>
+                    <p class="margemtextos">A WWF não pode atingir os seus objetivos sozinha. As fortes parcerias com empresas, governos, instituições de financiamento, comunidades locais, universidades e outras organizações não governamentais são essenciais para conduzir à mudança na escala necessária.
+                    </p>
+
+        </section>
+         
+
+    </main>
+
+ 
+    <footer class="centrartexto" >
+
+        <section>
+                <p class="text-white">Subscreve a Newsletter</p>   
+               
+                <form class="formnewsletter" method="post" action="javascript:;" onsubmit="subscricao()">
+                  <div >
+                    <input type="email" placeholder="E-mail" name="email" id="subscrever" required>
+                  </div>
+       
+                    <input type="submit" value="Subscrever" class="botaosubs">
+                </form>
+            
+                  <p>Redes Sociais</p>
+    
+            <div class="centrartexto">
+    
+                <a href="https://www.youtube.com/channel/UCZZldeOoWhKe7SaisbCPk5Q" target="_blank">
+                    <i class="fa fa-youtube  redessociais"></i>
+                </a>
+                <a href="https://www.instagram.com/wwfportugal" target="_blank">
+                    <i class="fa fa-instagram  redessociais"></i>
+                </a>
+                <a href="https://www.facebook.com/portugalWWF" target="_blank">
+                    <i class="fa fa-facebook  redessociais"></i>
+                </a>
+                <a href="https://twitter.com/wwf_portugal" target="_blank">
+                    <i class="fa fa-twitter redessociais"></i>
+                </a>
+        
+            </div>
+    
+            <p style="color: white;">WWF - World Wide Fund for Nature </p>
+    
+        </section>
+    
+    </footer>
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,917 @@
+* {  
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+}
+
+body {
+font-family: 'Alegreya', serif;
+font-size: 1.5rem;
+color:#5B5B5B;
+padding-top: 8rem;
+}
+
+body.WWF {
+  padding-top:0
+}
+
+.wwf {
+  padding: 2rem;
+  background-color: #0072B0;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3vw;
+  letter-spacing: 3px;
+  margin: 5rem 0; 
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*NAVBAR*/
+
+nav {
+font-family: 'Josefin Sans', sans-serif;
+}
+
+nav span {
+position: absolute;
+bottom: 0;
+right: 0;
+margin-bottom: 1rem;
+margin-right: 2rem;
+float:right;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #0072B0;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    right: 0;
+    width:100%;
+    opacity: 0.95;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    letter-spacing: 1.5px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left:0.5rem;
+  }
+  
+  .navbar a:hover {
+    background-color: white;
+    color: #0072B0;
+  }
+
+  .navbar a#logo:hover {
+    background-color:transparent;
+  }
+  
+.navbar a.active {
+    background-color: #00C2A0;
+    color: white;
+}
+
+.navbar a.active:hover { 
+    background-color: white;
+    color:#0072B0;
+}
+  
+.navbar .icon {
+   display: none;
+}
+  
+
+/* Corrigir a navbar a sobrepor os anchorlinks*/
+
+  div.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+
+/* Botao do dropdown*/
+
+.dropbtn {
+    display: block;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-left:0.5rem;
+}
+
+.dropbtn.active {
+  background-color: #00C2A0;
+  color: white;
+}
+
+.dropbtn.active:hover { 
+  background-color: white;
+  color:#0072B0;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Caixa escondida */
+
+.dropdown-caixa {
+  display: none;
+  position: fixed;
+  background-color: #0072B0;
+  border: 10px solid #0072B0;
+  border-top: none;
+}
+
+.dropdown-caixa a {
+  text-align: left;
+  margin-left: 0;
+  float: none;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-caixa a:first-child {
+margin-top: 1rem;
+}
+
+
+/*Mostrar caixa ao passar rato*/
+
+.dropdown:hover .dropdown-caixa,  .dropdown:active .dropdown-caixa{
+  display: block;
+  margin-right: 22px;
+}
+
+a.quemsomos {display: none;
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*MAIN*/
+
+h2 {color:#00458B;
+  border-bottom: 3px solid;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+  letter-spacing: 3px;
+}
+
+h2#primeiro {
+  margin-top: 0;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*FOOTER*/
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  background-color:#0072B0;
+  font-family: 'Josefin Sans', sans-serif;
+  color:white;
+}
+ 
+h3 {
+  margin-bottom: 0.8rem; 
+}    
+
+.redessociais {
+  color: #153868;
+  margin:0.5rem 1rem;
+  font-size: 30px;
+}
+
+.redessociais:hover {
+  color: white;
+}
+
+footer input{
+padding: 0.8rem 5rem;
+border:none;
+margin: 10px 0;
+}
+
+footer button {
+      background-color: #00C2A0;
+      color:#fff;
+      font-weight: 600;
+      padding: 0.8rem;
+      border:none;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+footer p:last-child {
+  font-size: 15px;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 25px;
+}
+
+#subscrever {
+padding: 15px;
+width: 300px;
+box-sizing: border-box;
+}
+
+
+.botaosubs {
+  background:#00C2A0 ;
+  padding: 15px;
+  color: #FFFFFF;
+}
+
+.formnewsletter {
+  display: inline-flex;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*LOGIN*/
+
+#displaylogin { 
+  display: none;
+  position:fixed;
+  z-index:1000;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#pagina-escura {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 0.85);
+  transition: 0.5s;
+}
+
+.caixalogin {
+  position:relative;
+  width: 360px;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+.h2login {
+    text-align: center;
+    margin: 1rem 0;
+    border-bottom: none;
+    padding: 0;
+}
+
+.formlogin {
+    background: #FFFFFF;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+
+#email, #password {
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.loginbtn {  
+    background:#0072B0 ;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.loginbtn:hover, .loginbtn:active, .loginbtn:focus {
+    background: #00C2A0;
+}
+
+p.registo {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 18px;
+}
+
+p.registo a{
+    color: #00458B;
+}
+
+p.registo a:hover, p.registo a:active, p.registo a:focus {
+  color: #00C2A0;
+}
+
+#dadosincorretos{
+  font-size: 18px;
+  margin: 8px 0 ;
+  color: red;
+  visibility: hidden;
+}
+
+.fechar {
+float: right;
+margin-top: 1rem;
+margin-right: 1rem;
+color: #0072B0;
+}
+
+.fechar:hover , .fechar:active, .fechar:focus {
+  color:#00C2A0
+}
+
+/*Registo */
+
+.registar {
+  padding-top: 2rem;
+}
+
+.formRegistar {
+    padding: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#firstName, #lastName, #e-mail, #pass {
+    background: #f2f2f2;
+    border: 0;
+    margin: 0 0 1rem 0;
+    padding: 15px;
+    font-size: 18px;
+    width: 75%;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#TermosCondicoes {
+    text-align: center;
+}
+
+#botaoRegistar {
+  text-align:center;
+  margin-top: 2rem;
+}
+
+.botaoReg {
+  background:#0072B0 ;
+  width: 200px;
+  margin: 0 auto;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 1rem;
+}
+
+.botaoReg:hover, .botaoReg:active, .botaoReg:focus {
+  background: #00C2A0;
+}
+
+.inputsregisto {
+  width: 50% ;
+  float: left;}
+
+p.descricao {
+  margin: 0 0 10px 10px;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*Candidatura*/
+
+#nomecompleto, #idade, #cc, #morada, #motivo, #sexo {
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 1rem 0;
+  padding: 15px;
+  font-size: 18px;
+  width: 75%;
+  color: #5B5B5B;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+p.descricao {
+  margin: 0 0 10px 10px;
+}
+
+.formcandidatura {
+  padding: 45px 45px 200px 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+#botaocandidatura {
+  text-align:center;
+  }
+
+/*--------------------------------------------------------------------------------------*/
+/*Sugestao*/
+
+  .formsugestao {
+    padding: 45px 45px 80px 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  .botaosugestao {
+    background:#0072B0 ;
+    width: 200px;
+    margin: 0 auto;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 1rem;  
+  }
+
+
+/*--------------------------------------------------------------------------------------*/
+/*Classes*/
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.centrartexto {
+  text-align: center;
+}
+
+.centrarimagem {
+  display: block;
+  margin: 0 auto;
+}
+
+.centrar {
+  margin-left: auto;
+  margin-right: auto;          
+}
+
+div#localizacao {
+  display: flex;
+  margin: 4rem 0;
+}
+
+div.left {
+  flex: 0 0 40%; 
+  margin: auto 1rem;
+}
+
+div.right {flex: 1;
+margin: auto 1rem;
+}
+
+.resp-container {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30%;
+    margin: 3rem 0 ;
+    border: 3px solid #00458B;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.resp-video {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 30%;
+    margin: 3rem auto ;
+    box-shadow: 0 0 15px;
+}
+
+#logo {    
+  display: block;
+  float: left;
+}
+
+#logo img {    
+  height: 3.5rem;
+  margin-left:2rem;
+}
+
+.margem {   
+   margin: 2rem 0;
+   }
+.margemsection {
+  margin: 0 5rem;
+}
+
+.margemtextos {
+  margin: 0 3rem
+}
+
+.ladoesquerdo {
+  width: 50%; 
+  float: left;
+}
+
+.ladodireito {
+  width: 50%; 
+  float: right;
+}
+
+ul#recursos {
+  margin: 1rem 8rem;
+}
+
+ul#recursos li{
+  margin: 1rem 0;
+}
+
+.maiusculas {
+  text-transform: uppercase;
+}
+
+img.gorila {
+  box-shadow: 0 0 15px; 
+  float: right; 
+  width: 40%;
+  margin-left: 20px;
+}
+
+#gorilas {
+    margin: 2rem auto;
+}
+
+#doacao {
+    background: #f2f2f2;
+    border: 0;
+    margin: 0 0 1rem 0;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+    color: #5B5B5B;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.botaodoacao {
+    background:#0072B0 ;
+    width: 200px;
+    margin: 0 auto;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 1rem;  
+}
+
+.inputdoacao {
+  width: 25% ;
+  float: left;
+}
+
+.margemeventos {
+  margin-left: 7rem;
+}
+
+.eventos 
+{display: flex;
+}
+
+.textoeventos {
+  width: 50%;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*Barras de Progresso*/
+
+.barrasdeprogresso {
+  background-color: #f2f2f2;
+}
+
+.verde {
+  color: #93B891
+}
+
+.barraverde {
+    color: white;
+    background-color: #93B891;
+    padding: 15px 0;
+}
+
+.azul {
+  color: #43B0BF
+}
+
+.barraazul {
+  color: white;
+  background-color: #43B0BF;
+  padding: 15px 0;
+}
+
+.laranja {
+  color: #F9A37F
+}
+
+.barralaranja {
+    color: white;
+    background-color: #F9A37F;
+    padding: 15px 0;
+}
+
+.amarelo {
+  color: #FEC745
+}
+
+.barraamarela {
+    color: white;
+    background-color: #FEC745;
+    padding: 15px 0;
+}
+
+.roxo {
+  color: #B1A3C9
+}
+
+.barraroxa {
+    color: white;
+    background-color: #B1A3C9;
+    padding: 15px 0;
+}
+
+
+
+/*--------------------------------------------------------------------------------------*/
+/*Slideshow*/
+
+
+.Slides {display: none;}
+
+.slideshow {
+
+   width: 40%;
+   float: right;
+    margin: 0 auto;
+    border: 10px solid white;
+    box-shadow: 0px 0px 5px 2px #ccc;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-left: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dotativo {
+  background-color: #6d6a6a;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*Media Queries*/
+
+@media screen and (max-width: 860px) {
+
+
+body.WWF {
+  padding-top:5.3rem
+}
+
+
+ nav span {  
+    position: relative;
+  }
+ 
+.navbar a {
+  display: none;
+   margin-left: 0;
+ }
+
+.navbar a:hover {
+      background-color: #0072B0;
+      color: white;
+}
+
+.navbar a.icon {
+      float: right;
+      display: block;
+      font-size: 2.5rem;
+      margin: 8px;
+
+}
+
+.navbar.responsive {
+    height: 100%;
+    opacity: 1;
+ }
+    
+ .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+ .navbar.responsive .icon.user { 
+      margin-right: 5.3rem;
+  }
+
+  .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+   }
+
+  .navbar.responsive span a {
+      padding-left: 2rem;
+   }
+ 
+  nav span a:first-child { 
+    margin-top: 8rem;
+  }
+      
+  .dropbtn {
+    display: none;
+  }
+
+  .resp-video {
+    width: 90%;
+    padding-top: 50%;
+  }
+/*--------------------------------------------------------------------------------------*/
+/*Fazer Login - mediaqueries*/
+
+.caixalogin {
+  position:relative;
+  width: 360px;
+  padding: 0;
+  margin: auto;
+}
+
+#perfil {
+  visibility: hidden;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+/*Classes - mediaquerie*/
+
+
+    .margemtextos {
+      margin: 0 3rem;
+    }
+
+    .margem {
+      margin:0 0;
+    }
+
+    .direita {
+      float: none;
+       margin-right: 0;
+      }
+
+      h2 {
+        padding-left:0;
+        padding-bottom: 1rem;
+      text-align: center; 
+    }
+
+      .resp-container {
+        width: 80%;
+          padding-top: 35%;
+      }
+      
+      .margemtextos {
+        margin: 0;
+      }
+
+      .margemsection {
+        margin: 0 4rem;
+      }
+
+      div#localizacao {
+        display: block
+      }
+
+      div.left { 
+        margin: 1rem auto;
+      }
+
+      div.right {
+        margin: 2rem auto;
+      }
+
+      ul#recursos {
+        margin: 1rem 3rem;
+      }
+
+      ul#recursos li{
+        margin: 1rem 0;
+      }
+    
+   .botaosugestao {
+    width: 75%;
+  }
+
+      img.gorila {
+        float: none;
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      .eventos {
+        display: block;
+      }
+
+      .textoeventos {
+        width: 100%;
+      }
+
+      .margemeventos {
+        margin-left: 0;
+      text-align: center;
+      }
+
+      .botaodoacao {width: 8rem;}
+
+      .slideshow {
+        width: 75%;
+         float: none;
+         margin-top: 2rem;
+      }
+
+/*Registo - mediaquerie*/
+
+
+      #firstName, #lastName, #e-mail, #pass {
+        width: 100%;
+        margin: 0 0 15px 0;
+        padding: 15px 0;
+      }
+
+      .inputdoacao {
+        width: 100% ;
+      }
+        
+ 
+  /*Candidatura - mediaquerie*/
+
+  #nomecompleto, #e-mail, #idade, #cc, #morada, #motivo, #sexo {
+  width: 100%;
+  margin: 0 0 15px 0;
+  padding: 15px 0;
+  }
+
+  .inputsregisto {
+    width: 100% ;
+    float: none; 
+  }
+  
+  .formcandidatura {
+    padding: 45px 45px 45px 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  p.descricao {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+.formnewsletter {
+  display: block;
+}
+
+#subscrever {
+  width: 50%;
+}
+
+}

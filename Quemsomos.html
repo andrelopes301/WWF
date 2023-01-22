@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Quem Somos</title>
+
+</head>
+
+<body id="removerscroll">
+   
+    <nav class="navbar" id="barradenavegacao">
+
+        <a id="logo" href="index.html" title="WWF">
+           <img  src="imgs/logo.png" alt="logo">
+       </a>
+
+       <span class="direita">
+
+       <a id="perfil" href="javascript:void(0);" onclick="login()">Perfil</a>   
+       <a href="Eventos.html">Eventos</a>
+       <a href="Recursos.html" >Recursos</a>
+       <a href="Oquefazemos.html">O Que Fazemos</a>
+       <a class="quemsomos active" href="Quemsomos.html">Quem Somos</a>
+       <div class="dropdown">
+        <button class="dropbtn active">Quem Somos <i class="fa fa-chevron-down"></i></button>
+        <div class="dropdown-caixa">
+            <a href="Quemsomos.html">wwf</a>
+          <a href="Quemsomos.html#encontre-nos">Encontre-nos</a>
+          <a href="Quemsomos.html#candidatura">Candidatura</a>
+        </div>
+      </div>
+
+       </span>
+
+
+       <a href="javascript:void(0);" class="icon" onclick="barradenavegacao()">
+       <i class="fa fa-bars"></i>
+       </a>
+
+        <a href="javascript:void(0);" class="icon user" onclick="login()">
+       <i class="fa fa-user"></i>
+       </a>
+
+   </nav>
+
+    <main>
+
+    <div id="displaylogin">
+   
+       <div id="pagina-escura"></div>
+
+       <div class="caixalogin">
+
+        <a class="fechar" onclick="fecharlogin()">
+            <i class="fa fa-close fa-2x "></i>
+        </a>
+            <div class="formlogin">
+
+              
+                <h2 class="h2login">LOGIN</h2>
+                <form method="post" id="login-form">
+                    <input type="email" placeholder="Email" id="email" required>
+                    <input type="password" pattern="[a-zA-Z]{3}[0-9]{3}" placeholder="Password" id="password" required>
+                    <input type="button" value="Login" onclick="validarlogin()" class="loginbtn">
+                 
+                    <p id="dadosincorretos">Dados Incorretos!</p>
+                    <p class="registo">Não tem conta? <a href="Registo.html">Faça já o seu registo!</a></p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <section class="margemsection ">
+            <h2 id="primeiro">QUEM SOMOS?</h2>
+            <br>
+                    
+            <div>
+
+                <figure  style="float: right;">
+                    <img style="box-shadow: 0 0 15px;" class="centrarimagem" src="imgs/quemsomos.jpg" width="50%">
+        
+                </figure>
+
+                <p class="margemtextos"><span style="font-size: 3rem;">WWF</span> — World Wide Fund for Nature é uma das maiores organizações independentes de conservação do mundo, com <b>mais de 5 milhões de apoiantes </b>
+                    a trabalhar em quase 100 países, em<b> cerca de 1300 projetos de conservação.</b> </p>
+                <br>
+
+                <p  class="margemtextos">A missão da WWF em Portugal é de <b>proteger as florestas</b> e a <b>biodiversidade do país</b>, 
+                    trabalhando com espécies como <b> a Águia Imperial </b>e em áreas como <b>  os bosques de Sobreiro</b> - verdadeiros tesouros naturais portugueses.
+                </p>
+
+                <br>
+            </div>
+                <br> 
+                <br>
+    </section>
+       
+    <div id="encontre-nos" class="anchor"></div>
+    <section class="margemsection ">
+            <h2>ENCONTRE-NOS</h2>
+    
+    
+    <div id="localizacao">
+        <div class="left">
+            <p class="centrartexto"> Labs ISCTE-IUL  </p>
+            <p class="centrartexto">Rua Adriano Correia de Oliveira, 4 A – Lab H3</p>
+            <p class="centrartexto"> 1600 – 312, Lisboa</p>
+        <br>
+        
+            <a style="display: block; color: inherit;" class="centrar centrartexto" href="mailto:mbarata@natureza-portugal.org">mbarata@natureza-portugal.org</a>
+            <p class="centrartexto">Tel. (+351) 999 999 999</p>
+            <br>
+            <p class="centrartexto">Seg.-Sex.: 9:00-17:00</p>
+            <p class="centrartexto">Sábados e Domingos: Encerrados</p>
+
+        </div>        
+        <div class="resp-container right"  >
+                <iframe class="resp-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.729557830147!2d-9.155569584795613!3d38.746967779594144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1933e778c50d9d%3A0x86b715f934f19beb!2sANP%7CWWF!5e0!3m2!1spt-PT!2spt!4v1576885670925!5m2!1spt-PT!2spt"  allowfullscreen=""></iframe>
+        </div>
+    </div>
+    </section>
+
+
+    <div id="candidatura" class="anchor"></div>
+    <section  class="margemsection ">
+        <h2>CANDIDATURA</h2>
+      <div class="registar">    
+        <div class="formcandidatura margemtextos ">
+
+            <form method="post" action="javascript:;" onsubmit="candidatura()">
+    
+                <div class="inputsregisto">
+                    <p class="descricao">Nome Completo</p>
+                    <input type="text" name="nome"  id="nomecompleto" required>
+                 </div> 
+
+                <div class="inputsregisto">
+                    <p class="descricao"> Sexo</p>
+              <select name="Sexo" id="sexo" required>
+                <option value="" selected disabled style="display: none;"></option>
+                  <option value="1">Masculino</option>
+                  <option value="2">Feminino</option>
+                  <option value="3">Outro</option>
+              </select>
+                 </div>
+
+                 <div class="inputsregisto">
+                <p class="descricao">Cartão de Identificação</p>
+                <input type="text"  size="30"  maxlength="50" name="cc" id="cc" required>
+                </div>
+
+                <div class="inputsregisto">
+                <p class="descricao">Idade</p>
+                <input type="number" name="idade" min="16" max="99" id="idade" required>
+                 </div>
+
+
+                 <div class="inputsregisto">
+                    <p class="descricao">E-Mail</p>
+                    <input type="email" name="email" id="e-mail" required>
+                </div>         
+
+                <div class="inputsregisto">
+                    <p class="descricao">Morada</p>
+                <input type="text"  size="30"  maxlength="80" name="morada" id="morada"  required>
+                 </div>
+
+
+                <div class="inputsregisto">
+                    <p class="descricao"> Motivo que o leva a integrar a organização</p>
+                <textarea name="motivo" rows="7" maxlength="1000" required id="motivo" style=" resize: none;"></textarea>
+                </div>
+
+
+                <div class="inputsregisto " style="margin-top: 1rem;">
+                    <p class="descricao">Li e aceito os termos e condições.<input style="margin-left: 8px;" type="checkbox" required>
+                    </p>
+               
+                </div>     
+
+                <div id="botaocandidatura" >
+                <input type="submit" value="Enviar" class="botaoReg" style="margin-top: 2rem;">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    </section>
+
+    </main>
+
+    <footer class="centrartexto" >
+
+        <section>
+                <p class="text-white">Subscreve a Newsletter</p>   
+               
+                <form class="formnewsletter" method="post" action="javascript:;" onsubmit="subscricao()">
+                  <div >
+                    <input type="email" placeholder="E-mail" name="email" id="subscrever" required>
+                  </div>
+       
+                    <input type="submit" value="Subscrever" class="botaosubs">
+                </form>
+            
+                  <p>Redes Sociais</p>
+    
+            <div class="centrartexto">
+    
+                <a href="https://www.youtube.com/channel/UCZZldeOoWhKe7SaisbCPk5Q" target="_blank">
+                    <i class="fa fa-youtube  redessociais"></i>
+                </a>
+                <a href="https://www.instagram.com/wwfportugal" target="_blank">
+                    <i class="fa fa-instagram  redessociais"></i>
+                </a>
+                <a href="https://www.facebook.com/portugalWWF" target="_blank">
+                    <i class="fa fa-facebook  redessociais"></i>
+                </a>
+                <a href="https://twitter.com/wwf_portugal" target="_blank">
+                    <i class="fa fa-twitter redessociais"></i>
+                </a>
+        
+            </div>
+    
+            <p style="color: white;">WWF - World Wide Fund for Nature </p>
+    
+        </section>
+    
+    </footer>
+
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
