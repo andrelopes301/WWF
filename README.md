@@ -22,7 +22,7 @@ This project uses the following technologies:
 
 ## Sources
 
-This website was developed for 'Web Technologies' subject, at ISEC in 2019/20, and is based on information available on the WWF's official website and other credible sources.
+This website was developed for 'Web Technologies' subject at ISEC in 2019/20, and is based on information available on the WWF's official website and other credible sources.
 
 ## License
 
